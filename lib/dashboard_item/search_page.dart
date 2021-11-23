@@ -1,6 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
+import 'detail_pages.dart';
+
 class ProductSearchPage extends SearchDelegate {
   CollectionReference _firebaseFirestore =
       FirebaseFirestore.instance.collection('transcationRecap');
@@ -70,7 +72,9 @@ class ProductSearchPage extends SearchDelegate {
                     final String item = data.get('item');
 
                     return ListTile(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => DetrailsPage(data: data) ));
+                      },
                       title: Text(productId),
                       subtitle: Text(item),
                     );

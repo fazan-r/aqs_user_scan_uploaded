@@ -66,5 +66,7 @@
     </array>
     <key>NSCameraUsageDescription</key>
         <string>Camera permission is required for barcode scanning.</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+        <string>This app needs access to location when open.</string>
 </dict>
 </plist>

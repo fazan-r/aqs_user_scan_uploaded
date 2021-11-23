@@ -2,8 +2,8 @@
 
 import 'package:aqs_final_project/dashboard_item/search_page.dart';
 import 'package:aqs_final_project/home/personal_information.dart';
+import 'package:aqs_final_project/qr_code/coba_lagi.dart';
 import 'package:aqs_final_project/qr_code/qr_homepage.dart';
-import 'package:aqs_final_project/qr_code/qr_scanner_cam.dart';
 import 'package:aqs_final_project/reusable_widget/alert.dart';
 import 'package:aqs_final_project/services/auth.dart';
 import 'package:flutter/material.dart';
@@ -55,6 +55,7 @@ class _DashboardState extends State<Dashboard> {
           ),
           title: Text('DASHBOARD'),
           actions: <Widget>[
+            // ignore: deprecated_member_use
             FlatButton(
               onPressed: () => _confirmSignOut(context),
               child: Text(
@@ -80,6 +81,7 @@ class _DashboardState extends State<Dashboard> {
                     Container(
                       height: 120,
                       width: 120,
+                      // ignore: deprecated_member_use
                       child: RaisedButton(
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10)),
@@ -98,6 +100,7 @@ class _DashboardState extends State<Dashboard> {
                     Container(
                       height: 120,
                       width: 120,
+                      // ignore: deprecated_member_use
                       child: RaisedButton(
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10)),
@@ -123,12 +126,13 @@ class _DashboardState extends State<Dashboard> {
                     Container(
                       height: 120,
                       width: 120,
+                      // ignore: deprecated_member_use
                       child: RaisedButton(
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10)),
                         elevation: 6,
                         onPressed: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context) => QRcodeScan()),
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => LagiCoba()),
                           );
                         },
                         color: Colors.blue[900],
@@ -141,6 +145,7 @@ class _DashboardState extends State<Dashboard> {
                     Container(
                       height: 120,
                       width: 120,
+                      // ignore: deprecated_member_use
                       child: RaisedButton(
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10)),

@@ -1,7 +1,5 @@
-import 'package:aqs_final_project/qr_code/coba_lagi.dart';
+
 import 'package:aqs_final_project/qr_code/qr_generator.dart';
-import 'package:aqs_final_project/qr_code/qr_scanner_cam.dart';
-// import 'package:aqs_final_project/qr_code/qr_scanner_cam.dart';
 import 'package:flutter/material.dart';
 
 class QrcodeHomePage extends StatefulWidget {
@@ -24,7 +22,7 @@ class _QrcodeHomePageState extends State<QrcodeHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            Button("Scan QR CODE", QRcodeScan()),
+            // Button("Scan QR CODE", (){}),
             SizedBox(height: 10.0,),
             Button("Generate QR CODE", QRcodeGenerator()),
           ],
